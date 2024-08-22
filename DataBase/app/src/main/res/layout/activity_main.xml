@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="1dp"
+    android:background="@drawable/img"
+    android:outlineAmbientShadowColor="@color/purple_700"
+
+    tools:context=".MainActivity">
+
+
+
+
+
+
+    <SearchView
+        android:id="@+id/search_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <EditText
+        android:id="@+id/ed_Sname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Enter Student Name "/>
+
+    <EditText
+        android:id="@+id/ed_Sem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Enter Student Semester "/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="INSERT"
+            android:layout_margin="1dp"
+            />
+
+        <Button
+            android:id="@+id/btn_Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="UPDATE"
+            android:layout_margin="1dp"
+            />
+        <Button
+            android:id="@+id/btn_Detele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DELETE"
+            android:layout_margin="1dp"
+            />
+
+        <Button
+            android:id="@+id/btn_Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CLEAR"
+            android:layout_margin="1dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NEXT"
+            android:layout_margin="1dp"
+            />
+
+        <Button
+            android:id="@+id/btn_Perv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PERV"
+            android:layout_margin="1dp"
+            />
+        <Button
+            android:id="@+id/btn_First"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FIRST"
+            android:layout_margin="1dp"
+            />
+
+        <Button
+            android:id="@+id/btn_Last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="last"
+            android:layout_margin="1dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_showdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Show All Data"
+            android:layout_margin="1dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/showList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
